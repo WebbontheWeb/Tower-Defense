@@ -63,4 +63,8 @@ public class WaveSpawner : MonoBehaviour {
 		Instantiate(enemy, spawnPoint.position, spawnPoint.rotation);
 	}
 
+	void OnDestroy(){
+		EnemiesAlive = 0; //bug fix
+	}
+
 }
