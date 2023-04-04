@@ -4120,6 +4120,7 @@ GameObject:
   - component: {fileID: 349879339}
   - component: {fileID: 349879341}
   - component: {fileID: 349879340}
+  - component: {fileID: 349879342}
   m_Layer: 5
   m_Name: Rounds Survived
   m_TagString: Untagged
@@ -4181,6 +4182,19 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &349879342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349879338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6379c7dcdf090e84aa4f7b93282f1c45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roundsText: {fileID: 1154182683}
 --- !u!1 &362638663
 GameObject:
   m_ObjectHideFlags: 0
@@ -6752,8 +6766,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuSceneName: MainMenu
-  nextLevel: Level02
-  levelToUnlock: 2
+  nextLevel: Level03
+  levelToUnlock: 3
   sceneFader: {fileID: 921177506}
 --- !u!1001 &608792095
 PrefabInstance:
@@ -20566,21 +20580,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
-  - enemy: {fileID: 1287944494460021648, guid: 6c3cc5c65fdc6f74a9329b2e2c642b0c, type: 3}
-    count: 2
-    rate: 1
+  - enemy: {fileID: 1287944494460021648, guid: 3ba73de8dbde94349b20dfe6543ff95c, type: 3}
+    count: 15
+    rate: 3
   - enemy: {fileID: 1287944494460021648, guid: 6c3cc5c65fdc6f74a9329b2e2c642b0c, type: 3}
     count: 2
     rate: 2
   - enemy: {fileID: 1287944494460021648, guid: 3ba73de8dbde94349b20dfe6543ff95c, type: 3}
-    count: 15
+    count: 10
     rate: 3
   - enemy: {fileID: 1287944494460021648, guid: 56afda60f0f3c624c889cf10165fdb8d, type: 3}
     count: 2
     rate: 1
   - enemy: {fileID: 1287944494460021648, guid: 6c3cc5c65fdc6f74a9329b2e2c642b0c, type: 3}
-    count: 15
-    rate: 3
+    count: 6
+    rate: 2
   spawnPoint: {fileID: 1838271349}
   timeBetweenWaves: 5
   waveCountdownText: {fileID: 850411388}

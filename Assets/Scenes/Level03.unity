@@ -4120,6 +4120,7 @@ GameObject:
   - component: {fileID: 349879339}
   - component: {fileID: 349879341}
   - component: {fileID: 349879340}
+  - component: {fileID: 349879342}
   m_Layer: 5
   m_Name: Rounds Survived
   m_TagString: Untagged
@@ -4181,6 +4182,19 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &349879342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349879338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6379c7dcdf090e84aa4f7b93282f1c45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roundsText: {fileID: 1154182683}
 --- !u!1 &362638663
 GameObject:
   m_ObjectHideFlags: 0
