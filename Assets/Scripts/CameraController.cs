@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public bool doMovement = false;
-
-	public float panSpeed = 30f;
-	public float panBorderThickness = 10f;
+	public float panSpeed = 20f;
+	public float panBorderThickness = 5f;
 
 	public float scrollSpeed = 5f;
 	public float minY = 10f;
@@ -16,13 +14,10 @@ public class CameraController : MonoBehaviour
 	// Update is called once per frame
 	void Update() {
 
-		if(Input.GetKeyDown(KeyCode.Escape)){
-			doMovement = !doMovement;
-        }
-
-		if(!doMovement){
-            return;
-        }
+		if(GameManager.GameIsOver) {
+			this.enabled = false;
+			return;
+		}
 
         //using world space to ignore rotation of camera
 		if(Input.GetKey("w") || Input.mousePosition.y >= Screen.height - panBorderThickness) {
