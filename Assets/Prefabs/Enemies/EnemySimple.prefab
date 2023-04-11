@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 8559548720563260278}
   - component: {fileID: -4750040153838419255}
   - component: {fileID: 3288350076819679790}
+  - component: {fileID: 5787698839655986865}
+  - component: {fileID: 27455002797565641}
   m_Layer: 0
   m_Name: EnemySimple
   m_TagString: Enemy
@@ -130,6 +132,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 710a8c88bdef3e444b26eb26b8d89e78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EndPoint: {fileID: 2391998067049661455, guid: 4f4a5d091b90b93429002841d6304940, type: 3}
+--- !u!195 &5787698839655986865
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287944494460021648}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 1
+  m_Speed: 4
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 0
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0.5
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 3
+--- !u!54 &27455002797565641
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287944494460021648}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3329242123101601145
 GameObject:
   m_ObjectHideFlags: 0
